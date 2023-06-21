@@ -1,0 +1,228 @@
+   
+
+/*
+=====================================================================
+   1/ Style general
+   2/ Navigation bar
+   3/ Banner Engineer
+   4/ About Section
+   5/ Work experience Section
+   6/ Education
+   7/ Skills
+   8/ Projects
+   9/ Footer
+
+===================================================================== */
+
+
+/* screenwidth between 1280 and 1600px - mid to large desktop screens
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1600px) {
+
+header .banner-text h1{font-size: 75px;}
+header .banner-text h2{font-size: 30px;}
+header .banner-text h3{font-size: 18px;}
+#nav-wrap {font-size: 12px;}
+ul#nav li a {padding: 10px 15px;line-height: 20px;}
+.FR {margin-left:150px;}
+ul#nav li {height: 40px;}
+.EN, .FR{height: 20px; width: 20px; border-radius: 10px; margin-top: 10px;}
+header .social{font-size: 30px;}
+
+#about .box_photo{margin-top: 100px;margin-left: 20px;margin-right: 20px;}
+#about .box_photo img{width: 312px ; height: 375px;}
+#about .box_about{margin-top: 100px;margin-bottom: 50px;margin-left: 20px;margin-right: 20px;width: 667px;}
+#about .box_about h4 {margin: 0px 17px 17px 17px;font-size: 20px;}
+#about .box_about p{font-size: 15px; margin: 17px 17px 42px 17px;}
+#about .box_contact_resume{width: 667px;}
+
+.lateral_box p{font-size: 16px;color: #3f3f3f;padding: 17px 17px 17px 17px;}
+#experiences img, #education img{margin-right: 17px;margin-bottom: 42px;}
+.main_box h5, .lateral_box h2{font-size: 24px;padding: 13px 17px 13px 17px;line-height: 24px;}
+.main_box h3{font-size: 16px;padding: 0px 17px 17px 17px;}
+.main_box p {font-size: 16px;padding: 0px 17px 83px 17px;}
+#experiences img, #education img{width: 167px;height: 167px;}
+#experiences hr, #education hr{margin: 42px auto 42px auto;}
+
+#skills .banner_thematic, #experiences .banner_thematic, #education .banner_thematic{height: 167px;}
+#skills h1, #experiences h1, #education h1{font-size: 27px;height: 42px;margin: 63px 13px;line-height: 42px;}
+.gear1 img{width: 50px;height: 50px;margin-top: 58px;}
+.gear2 img{width: 33px;height: 33px;margin-top: 56px;margin-left: -3px;}
+.main_box h4{padding: 9px 13px;margin:9px 4px;border-radius: 4px;}
+#skills .main_box p{padding-top: 12px;}
+
+
+#projects p{font-size: 27px;letter-spacing: 2;line-height: 42px;margin:56px 13px;}
+h6{font-size: 15px;margin: 17px auto;}
+.img_group{padding-bottom: 42px;}
+.modal {padding-top:125px;}
+.modal_img_content {width: 750px;height: 500px;}
+.modal_img_prog{width: 450px;height: 450px;}
+#caption {font-size: 14px;width: 750px;}
+.close, .close_prog {font-size: 42px;}
+
+
+footer .social_links{font-size: 30px;padding: 35px 0px;}
+
+#legal_informations .box_legal{margin-left: 75px;margin-right: 75px;margin-bottom: 200px;margin-top: 75px;}
+.empty{height: 75px;}
+}
+
+
+
+
+/* screenwidth between 1024px and 1280px - small desktops screens
+--------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1280px) {
+
+header .banner-text h1{font-size: 60px;}
+header .banner-text h2{font-size: 24px;}
+header .banner-text h3{font-size: 18px;}
+#nav-wrap {font-size: 12px;}
+ul#nav li a {padding: 10px 15px;line-height: 20px;}
+.FR {margin-left:120px;}
+ul#nav li {height: 40px;}
+.EN, .FR{height: 20px; width: 20px; border-radius: 10px; margin-top: 10px;}
+header .social{font-size: 24px;}
+
+#about .box_photo{margin-top: 75px;margin-left: 16px;margin-right: 16px;}
+#about .box_photo img{width: 250px ; height: 300px;}
+#about .box_about{margin-top: 75px;margin-bottom: 50px;margin-left: 16px;margin-right: 16px;width: 667px;}
+#about .box_about h4 {margin: 0px 14px 14px 14px;font-size: 16px;}
+#about .box_about p{font-size: 14px; margin: 14px 14px 42px 14px;}
+#about .box_contact_resume{width: 667px;}
+
+.lateral_box p{font-size: 14px;color: #3f3f3f;padding: 14px 14px 14px 14px;}
+#experiences img, #education img{margin-right: 14px;margin-bottom: 34px;}
+.main_box h5, .lateral_box h2{font-size: 19px;padding: 11px 14px 13px 14px;line-height: 19px;}
+.main_box h3{font-size: 14px;padding: 0px 14px 14px 14px;}
+.main_box p {font-size: 14px;padding: 0px 14px 66px 14px;}
+#experiences img, #education img{width: 133px;height: 133px;}
+#experiences hr, #education hr{margin: 34px auto 34px auto;}
+
+#skills .banner_thematic, #experiences .banner_thematic, #education .banner_thematic{height: 133px;}
+#skills h1, #experiences h1, #education h1{font-size: 22px;height: 34px;margin: 50px 11px;line-height: 34px;}
+.gear1 img{width: 40px;height: 40px;margin-top: 46px;}
+.gear2 img{width: 26px;height: 26px;margin-top: 45px;margin-left: -3px;}
+.main_box h4{padding: 7px 11px;margin:7px 4px;border-radius: 4px;font-size: 14px;}
+#skills .main_box p{padding-top: 10px;}
+
+
+#projects p{font-size: 21px;letter-spacing: 2;line-height: 33px;margin:45px 11px;}
+h6{font-size: 14px;margin: 14px auto;}
+.img_group{padding-bottom: 33px;}
+.modal {padding-top:120px;}
+.modal_img_content {width: 750px;height: 500px;}
+.modal_img_prog{width: 450px;height: 450px;}
+#caption {font-size: 14px;width: 750px;}
+.close, .close_prog {font-size: 33px;}
+
+
+footer .social_links{font-size: 24px;padding: 38px 0px;}
+footer > p {padding: 20px 0px;font-size: 12px;}
+
+#legal_informations .box_legal{margin-left: 50px;margin-right: 50px;margin-bottom: 200px;margin-top: 50px;}
+.empty{height: 50px;}
+
+}
+/* screenwidth less than 1024px - small screen tablets
+--------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+header .banner-text h1{font-size: 48px;}
+header .banner-text h2{font-size: 20px;}
+header .banner-text h3{font-size: 15px;}
+#nav-wrap {font-size: 10px;}
+ul#nav li a {padding: 10px 10px;}
+header .banner{width: 85%;}
+.FR {margin-left:10px;}
+header .scrolldown a{visibility: hidden;}
+header .scrolldown:hover a{visibility: hidden;}
+header .social{font-size: 25px;}
+
+#about .box_photo{margin-top: 50px;margin-left: 125px;margin-right: 125px;}
+#about .box_photo img{width: 220px ; height: 260px;}
+#about .box_about{margin-top: 50px;margin-bottom: 25px;margin-left: 30px;margin-right: 30px;min-width: 300px;width: 650px;}
+#about .box_about h4 {margin: 0px 15px 0px 10px;font-size: 14px;}
+#about .box_about p{font-size: 13px;margin: 10px 11px 27px 10px;}
+#about .box_contact_resume{min-width: 300px;width: 650px;}
+#about .box_contact_resume p .button{padding: 10px 10px;}
+#about .box_contact{margin-right: 75px;}
+
+.lateral_box p{font-size: 13px;color: #3f3f3f;padding: 11px 11px 11px 11px;}
+#experiences img, #education img{margin-right: 11px;margin-bottom: 27px;}
+.main_box:hover h5, .lateral_box:hover h2{text-decoration: underline 2px #76D7C4;text-underline-offset: 3px;}
+.main_box h5, .lateral_box h2{font-size: 16px;padding: 8px 11px 8px 11px;line-height: 15px;}
+.main_box h3{font-size: 13px;padding: 0px 11px 11px 11px;}
+.main_box p {font-size: 13px;padding: 0px 11px 53px 11px;}
+#experiences img, #education img{width: 107px;height: 107px;}
+#experiences hr, #education hr{margin: 27px auto 27px auto;}
+#experiences .main_box, #education .main_box, #skills .main_box{width: 60%;}
+
+#skills .banner_thematic, #experiences .banner_thematic, #education .banner_thematic{height: 107px;}
+#skills h1, #experiences h1, #education h1{font-size: 17px;height: 27px;margin: 40px 8px;line-height: 27px;}
+.gear1 img{width: 32px;height: 32px;margin-top: 37px;}
+.gear2 img{width: 21px;height: 21px;margin-top: 36px;margin-left: -2px;}
+.main_box h4{padding: 6px 8px;margin:6px 3px;border-radius: 3px;font-size: 13px;}
+#skills .main_box p{padding-top: 8px;}
+
+#projects p{font-size: 17px;letter-spacing: 2;line-height: 27px;margin:37px 8px;}
+#Moon_earth, #programming{width: 250px;height: 250px;margin: 0px 20px;}
+h6{font-size: 12px;margin: 11px auto;} 
+.img_group{padding-bottom: 27px;}
+.modal {padding-top:107px;}
+.modal_img_content {width: 600px;height: 400px;}
+.modal_img_prog{width: 400px;height: 400px;}
+#caption {font-size: 12px;width: 600px;}
+.close, .close_prog {font-size: 27px;}
+
+
+footer{height: 120px;}
+footer .social_links{font-size: 25px;padding: 17px 0px;}
+footer > p {padding: 20px 0px;font-size: 10px;}
+footer .scrolltop a{visibility: hidden;}
+footer .scrolltop:hover a{visibility: hidden;}
+
+
+#legal_informations .box_legal{margin-left: 25px;margin-right: 25px;margin-bottom: 200px;margin-top: 30px;}
+.empty{height: 30px;}
+
+}
+
+
+@media only screen and (max-width: 800px) {
+header {background: url("../img/banner_small.jpg") no-repeat top center;
+background-size: cover !important; 
+-webkit-background-size: cover !important;}
+#caption {font-size: 12px;width: 75vw;margin-bottom: 200px;}
+.modal_img_content {width: 75vw;height: 50vw;}
+.modal_img_prog {width: 75vh;height: 75vh;}
+}
+
+
+@media only screen and (max-width: 415px) {
+header .banner-text h1{font-size: 36px;padding-top: 80px;}
+header .banner-text h2{font-size: 20px;}
+header .banner-text h3{font-size: 15px;}
+#caption {font-size: 12px;width: 330px;}
+.modal_img_content {width: 330px;height: 220px;}
+.modal_img_prog{width: 220px;height: 220px;}
+.modal {padding-top:150px;padding-bottom: 200px;}
+.close, .close_prog {top: 100px;right: 25px;}
+
+#about .box_photo{margin-top: 50px;}
+#about .box_photo img{width: 220px ; height: 260px;}
+#about .box_about{margin-top: 50px;margin-bottom: 25px;margin-left: 10px;margin-right: 10px;min-width: 310px;width: 370px;}
+#about .box_about h4 {margin: 0px 15px 0px 10px;font-size: 16px;}
+#about .box_about p{font-size: 14px;margin: 5px 10px 27px 10px;}
+#about .box_contact_resume{min-width: 310px;width: 370px;}
+#about .box_contact_resume p .button{padding: 10px 10px;margin-top: 30px;}
+.main_box p{font-size: 14px;text-align: left;}
+.main_box h5{font-size: 16px;text-align: left;}
+.main_box:hover h5{text-decoration: none;}
+.main_box h3{font-size: 14px;text-align: left;}
+.lateral_box p{font-size: 14px;}
+.main_box h4{font-size: 14px;text-align: left;}
+h6{font-size: 14px;} 
+}

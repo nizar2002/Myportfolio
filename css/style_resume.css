@@ -1,0 +1,748 @@
+   
+
+/*
+=====================================================================
+   1/ Style general
+   2/ Navigation bar
+   3/ Banner Engineer
+   4/ About Section
+   5/ Work experience Section
+   6/ Education
+   7/ Skills
+   8/ Projects
+   9/ Footer
+
+===================================================================== */
+@import url("../font-awesome/css/font-awesome.min.css");
+
+/*=====================================================================
+1/ Style general
+===================================================================== */
+
+body{
+width: 1920px;
+max-width: 100%;
+margin:  0 auto;
+background: #262626;
+}
+
+a{text-decoration: none;}
+span{font-weight: bold;}
+
+
+/*=====================================================================
+2/ Navigation bar
+===================================================================== */
+
+header {
+   position: relative;
+   height: 1000px;
+   min-height: 500px;
+   width: 100%;
+   text-align: center;
+   overflow: hidden;
+   background: url("../img/banner.jpg") no-repeat top center;
+   background-size: cover !important; 
+	-webkit-background-size: cover !important;
+}
+
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+
+#nav-wrap > a.mobile-btn { display: none; }
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+#nav-wrap {
+   font: 14px 'Arial', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin: 0 auto;
+   z-index: 9;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+}
+
+
+ul#nav {
+   width: auto;
+   text-align: center;
+
+}
+ul#nav li {
+   height: 50px;
+   position: relative;
+   list-style: none;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+
+ul#nav li a {
+   display: inline-block;
+   padding: 10px 20px;
+   line-height: 30px;
+   text-decoration: none;
+   color: #fff;
+}
+
+ul#nav li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #76D7C4;
+  visibility: hidden;
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition:.3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	-ms-transition: .3s ease-in-out;
+	transition:.3s ease-in-out;
+}
+
+
+ul#nav li.current a { color: #76D7C4; }
+ul#nav li.current a:before {visibility: visible;width: 100%;}
+.opaque {background-color: #262626;}
+
+.FR{
+height: 26px;
+width: 26px;
+background: url("../img_utilities/FR.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 13px;
+margin-left:200px;
+margin-right: 20px;
+margin-top: 12px;
+}
+.EN{
+height: 26px;
+width: 26px;
+background: url("../img_utilities/EN.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 13px;
+margin-top: 12px;
+}
+
+
+/*=====================================================================
+3/ Banner Engineer
+===================================================================== */
+
+
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width:60%;
+   text-align: middle;
+}
+
+header .banner-text { width: 100%; }
+
+header .banner-text h1{
+   font: 90px 'Arial', serif;
+   color: white;
+   letter-spacing: -1px;
+   margin: 15px auto 25px auto;
+   text-align: justify;
+}
+
+header .banner-text h2{
+   font: 36px 'Arial', serif;
+   color: lightgrey;
+   letter-spacing: -1px;
+   margin: 0px auto 20px auto;
+   text-align: justify;
+   font-style: italic;
+}
+
+header .banner-text h3 {
+   font: 20px 'Arial', serif;
+   color: white;
+   margin: 0 auto;
+   text-align: justify;
+}
+
+
+header .banner-text hr {
+   width: 60%;
+   margin: 50px auto 50px auto;
+   border: none;
+   border-top: 1px solid whitesmoke;
+}
+
+
+header .social{
+   position: relative;
+   font-size: 35px;
+   padding: 0;
+
+
+}
+header .social li {
+   display: inline-block;
+   margin: 0 20px;
+}
+header .social li a { color: whitesmoke;}
+header .social li a:hover { color: #76D7C4;}
+
+/* scrolldown link */
+header .scrolldown a{
+   position: absolute;
+   bottom: 40px;
+   height: 40px;
+   width: 40px;
+   margin-left: -20px;
+   background-image: url("../img_utilities/scrolldown.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   cursor: auto;
+
+}
+header .scrolldown:hover a{ background-image: url("../img_utilities/scrolldown_light.png");
+   background-size: cover;
+   background-repeat: no-repeat;}
+
+header .banner-text .smoothscroll {
+font-style: italic;
+color: white;
+}
+
+
+/*=====================================================================
+4/ About section
+===================================================================== */
+
+
+#about{
+position: relative;
+width: 100%;
+background: #262626;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+overflow: hidden;
+}
+
+#about .box_photo{
+position: relative; 
+margin-top: 120px;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+#about .box_about{
+position: relative;
+max-height: 500px;
+margin-top: 120px;
+margin-bottom: 75px;
+margin-left: 25px;
+margin-right: 25px;
+width: 800px;
+text-align: justify;
+}
+
+#about .box_about h4 {
+position: relative;
+font-family: 'Arial';
+margin: 0px 20px 20px 20px;
+color: white;
+font-size: 24px;
+text-transform: uppercase;
+font-weight: lighter;
+}
+
+#about .box_about p{
+position: relative;
+font: 18px 'Arial', serif;
+margin: 20px 20px 50px 20px;
+color: silver;
+}
+
+#about .box_contact_resume{
+position: relative;
+display: flex;
+flex-wrap: wrap;
+width: 800px;
+}
+
+#about .box_contact{
+position: relative;
+text-align: left;
+margin-right: 100px;
+}
+
+#about .box_button{
+position: relative;
+text-align: center;
+margin: 0 auto;
+}
+
+
+#about .box_contact_resume p > a{
+color: silver;
+font-style: italic;
+}
+
+#about .box_contact_resume p .button{
+background-color: #3f3f3f;
+padding: 15px 30px;
+border-radius: 5px;
+display: inline-block;
+vertical-align: middle;
+}
+
+#about .box_contact_resume p .button:hover{
+background-color: #fff;
+color: #1b1b1b;
+}
+
+.reverse{unicode-bidi: bidi-override; direction: rtl;text-align: left;}
+
+
+/*=====================================================================
+5/ Work experience Section &
+6/ Education section
+===================================================================== */
+
+#experiences{
+position: relative;
+width: 100%;
+background: white;
+display: flex;
+flex-wrap: wrap;
+overflow: hidden;
+}
+
+
+#experiences .lateral_box, #education .lateral_box, #skills .lateral_box{
+position: relative;
+width: 35%;
+background-color: white;
+text-align: right;
+}
+
+#experiences img, #education img{margin-right: 20px;margin-bottom: 50px;}
+
+
+#experiences .main_box, #education .main_box, #skills .main_box{
+position: relative;
+width: 50%;
+background-color: white;
+}
+
+.lateral_box p{
+font-size: 18px;
+color: #3f3f3f;
+padding: 20px 20px 20px 20px;
+font-family: 'Arial';
+margin: 0px 0px;
+}
+
+.main_box:hover h5, .lateral_box:hover h2{
+text-decoration: underline 3px #76D7C4;
+text-underline-offset: 4px;
+}
+
+
+.main_box h5, .lateral_box h2{
+font-size: 28px;
+font-family: 'Arial';
+color: #262626;
+padding: 15px 20px 15px 20px;
+margin: 0px 0px;
+line-height: 28px;
+}
+
+.main_box h3{font-size: 18px;
+font-family: 'Arial';
+color: #3f3f3f;
+font-style: italic;
+padding: 0px 20px 20px 20px;
+margin: 0px 0px;
+font-weight: lighter;
+}
+
+.main_box p {
+font-size: 18px;
+font-family: 'Arial';
+color: #444444;
+padding: 0px 20px 100px 20px;
+margin: 0px 0px;
+text-align: justify;
+font-weight: lighter;
+}
+
+
+#education {
+position: relative;
+overflow: hidden;
+width: 100%;
+background-color: white;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+#experiences hr, #education hr{
+border: none;
+border-bottom: solid 1px #3f3f3f;
+margin: 50px auto 50px auto;
+width: 40%;
+}
+
+
+/*=====================================================================
+7/ Skills section
+===================================================================== */
+
+#skills {
+position: relative;
+overflow: hidden;
+width: 100%;
+background-color: white;
+display: flex;
+flex-wrap: wrap;
+}
+
+#skills .banner_thematic, #experiences .banner_thematic, #education .banner_thematic{
+position: relative;
+width: 100%;
+display: flex;
+height: 200px;
+justify-content: center;
+}
+
+#skills h1, #experiences h1, #education h1{
+font-family: 'Arial';
+font-size: 32px;
+color: #262626;
+margin: 0px auto;
+height: 50px;
+margin: 75px 15px;line-height: 50px;
+text-transform: uppercase;
+font-weight: lighter;
+}
+
+
+@keyframes rotation_pos{
+0%{transform: rotate(0deg);}
+100%{transform: rotate(360deg);}
+}
+
+@keyframes rotation_neg{
+0%{transform: rotate(0deg);}
+100%{transform: rotate(-360deg);}
+}
+
+.gear1 img{
+width: 60px;
+height: 60px;
+margin-top: 70px;
+animation: infinite rotation_pos 10s linear forwards;
+}
+
+.gear2 img{
+width: 40px;
+height: 40px;
+margin-top: 68px;
+margin-left: -4px;
+animation: infinite rotation_neg 6s linear forwards;
+}
+
+.main_box h4{
+position: relative;
+font-family: 'Arial';
+font-weight: lighter;
+background-color: #76D7C4;
+padding: 10px 15px;
+margin:10px 5px;
+border-radius: 5px;
+color: #3f3f3f;
+display: inline-block;
+vertical-align: middle;
+text-align: justify;
+}
+
+#skills .main_box p{
+padding-top: 15px;
+}
+
+/*=====================================================================
+8/ Projects
+===================================================================== */
+
+#projects {
+position: relative;
+width: 100%;
+background-color: #76D7C4;
+text-align: center;
+overflow: hidden;
+}
+
+.banner_projects {width: 100%;
+}
+
+#projects p{
+font-size: 32px;
+font-family: 'Arial';
+color: whitesmoke;
+letter-spacing: 2;
+text-transform: uppercase;
+line-height: 50px;
+margin:75px 15px;
+}
+
+
+.img_group{
+position: relative;
+display: inline-block;
+margin-bottom: 50px;
+}
+
+h6{font-size: 16px;
+   font-family: 'Arial';
+   color: #3f3f3f;
+} 
+
+
+
+/* Style the Image Used to Trigger the Modal */
+#Moon_earth, #programming{
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  height: 300px;
+  margin: 0px 20px;
+  z-index: 10;
+  margin-top: 0px;
+}
+
+#Moon_earth:hover ,#programming:hover {filter: brightness(0.5);}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top:200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #262626;
+}
+
+/* Modal Content (Image) */
+.modal_img_content {
+  margin: auto;
+  display: block;
+  width: 900px;
+  height: 600px;
+}
+
+.modal_img_prog{
+margin: auto;
+display:block;
+width: 600px;
+height: 600px;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  font-family: 'Arial';
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 900px;
+  text-align: justify;
+  color: #bcd3dd;
+  padding: 20px 0px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal_img_content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close, .close_prog {
+  position: absolute;
+  top: 75px;
+  right: 75px;
+  color: silver;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close_prog:hover
+.close:focus, .close_prog:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*=====================================================================
+9/ Footer
+===================================================================== */
+
+footer{
+position: relative;
+background: #0d0d0d;
+width: 100%;
+text-overflow: hidden;
+height: 200px;
+text-align: center;}
+
+footer .social_links{
+   position: relative;
+   font-size: 30px;
+   height: 30px;
+   margin: 0px auto;
+   padding: 35px 0px;
+}
+footer .social_links li {
+   display: inline-block;
+   margin: 0 15px;
+}
+footer .social_links li a { color: silver;}
+footer .social_links a:hover { color: white;}
+
+footer hr {
+   width: 20%;
+   margin: 0 auto;
+   border: none;
+   border-top: 1px solid silver;
+}
+footer > p {
+width: 100%;
+height: 14px;
+margin: 0px auto;
+padding: 43px 0px;
+color: silver;
+font-size: 14px;
+}
+
+footer > p > a{
+color: silver;
+text-decoration: underline 1px silver;
+}
+/* scrolldown link */
+footer .scrolltop a{
+   position: absolute;
+   top: -80px;
+   height: 40px;
+   width: 40px;
+   margin-left: -20px;
+   background-image: url("../img_utilities/scrolltop.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   cursor: auto;
+
+}
+footer .scrolltop:hover a{ background-image: url("../img_utilities/scrolltop_light.png");
+   background-size: cover;
+   background-repeat: no-repeat;}
+
+
+/*=====================================================================
+9/ legal_informations
+===================================================================== */
+
+#legal_informations{
+position: relative;
+width: 100%;
+background-color: #262626;
+color: white;
+text-align: justify;
+overflow: hidden;
+margin: 0 0px;
+font-family: 'Arial';
+}
+
+
+#legal_informations .Button{
+position: relative;
+background-color: #76D7C4;
+padding: 15px 30px;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-size: 16px;
+}
+
+
+#legal_informations .box_legal{
+position: relative;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 300px;
+margin-top: 0px;
+}
+#legal_informations h1{
+font-size: 32px;
+letter-spacing: 2;
+text-transform: uppercase;
+line-height: 50px;
+margin-top: 50px;
+margin-bottom: 30px;
+color: white;
+}
+
+#legal_informations h2{
+font-size: 20px;
+letter-spacing: 1;
+text-transform: uppercase;
+line-height: 20px;
+margin-top: 40px;
+color: white;
+text-align: left;
+}
+
+#legal_informations p{
+color: silver;
+font-size: 14px;
+}
+
+#legal_informations a{
+color: #76D7C4;
+text-decoration: underline;
+}
+
+#legal_informations .Button:hover{
+color: #262626;
+background-color: #EAFAF1;;
+}
+.empty{
+position: relative;
+height: 100px;
+}
